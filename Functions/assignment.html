@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        // function checkWheather(a) {
+        //     if (a>0) {
+        //         console.log("Positive");
+                
+        //     } else if(a<0) {
+        //         console.log("Negative");
+                
+        //     } else{
+        //         console.log("Zero");
+                
+        //     }
+        // }
+        // checkWheather(5)
+
+        // function sum(a,b) {
+        //     console.log(a+b);
+            
+        // }
+        // function difference(a,b) {
+        //     console.log(a-b);
+            
+        // }
+        // function product(a,b) {
+        //     console.log(a*b);
+            
+        // }
+        // function division(a,b) {
+        //     console.log(a/b);
+            
+        // }
+        // sum(10,20);
+
+        // Write a function that takes a string and returns the number of vowels in it.
+
+        function checkString(str) {
+            let vowels = "aeiouAEIOU";
+            let count = 0;
+
+            for (let i=0;i<str.length;i++) {
+                if (vowels.includes(i)) {
+                    count++;
+                }
+
+                
+            }
+          return count
+            
+        }
+console.log(checkString("Aastha"));
+
+// Write a function that takes a list of numbers and returns the largest and smallest number.
+
+        // function find(arr) {
+            
+        // }
+
+    //    function fact(num) {
+    //      if (num < 0) return "Factorial not defined for negative numbers";
+
+    //         let result = 1;
+    //         for (let i = 1; i <= num; i++) {
+    //             result *= i;
+    //         }
+    //         console.log(result);
+            
+    //     } 
+    //    fact(5);
+
+
+//     function palindrome(str) {
+    
+ 
+//   const cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  
+ 
+//   const reversedStr = cleanedStr.split('').reverse().join('');
+  
+ 
+//   return cleanedStr === reversedStr;
+
+
+
+
+// }
+// console.log(palindrome("Aastha")); 
+
+
+// function prime(num) {
+   
+//   if (num <= 1) {
+//     return false;
+//   }
+
+//   if (num === 2) {
+//     return true;
+//   }
+
+//   if (num % 2 === 0) {
+//     return false;
+//   }
+
+//   const limit = Math.sqrt(num);
+//   for (let i = 3; i <= limit; i += 2) {
+//     if (num % i === 0) {
+//       return false; 
+//     }
+//   }
+
+//   return true; 
+// }
+// console.log(prime(11));
+
+// Write a function that takes a list of numbers and returns a new list without duplicates.
+
+
+// function fib(n) {
+  
+//   const fib = [0, 1]; 
+  
+
+//   for (let i = 2; i < n; i++) {
+//     fib[i] = fib[i - 1] + fib[i - 2];
+//   }
+
+//   return fib.slice(0, n);
+// }
+
+// console.log(fib(10));
+
+
+function star(num) {
+    for (let i = 0; i <= num; i++) {
+        for (let j = 0; j < i; j++) {
+           document.writeln("*");
+           
+            
+        }
+        document.writeln("<br>");
+        
+        
+    }
+}
+star(5)
+
+
+
+
+
+    </script>
+    </body>
+</html>
