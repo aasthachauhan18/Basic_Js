@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const Person ={
+            name:"Aastha",
+            age:20,
+            duration:2,
+            isEligible:true,
+            Hello:function() {
+                console.log("Hello,I am " +this.name);
+                
+
+            },
+            course:{
+                FD:20000,
+                FSD:90000
+
+            }
+        };
+
+        const Person1 ={
+            name:"Hiya",
+            age:21,
+            course:"FullStack",
+            duration:2,
+            isEligible:true
+        }
+
+        console.log(Person);
+        
+        // Check if a key exists.
+        // console.log(Object.hasOwn(Person,"age"));
+        console.log(Object.prototype.hasOwnProperty.call(Person,"name"));
+        
+        
+        // Avoid inherited properties in a loop.
+        // for (const key in Person1) {
+        //     if (Object.prototype.hasOwnProperty.call(Person1,key)) {
+        //         console.log(`${key} : ${Person1[key]}`);
+                
+        //     }
+            
+            
+        // }
+
+        // Validate a form input field.
+        // Safely access object data.
+        // console.log(Person?.course?.FSD);
+        
+        // Write a wrapper function for secure access.
+        // Person.Hello()
+        
+        // Filter out keys that don’t belong to the object.
+        
+        // Debug property access.
+        // Avoid prototype pollution.
+        // Check required config options.
+        // Prevent accessing non-existent keys.
+        if (Object.prototype.hasOwnProperty.call(Person,'name')) {
+            console.log(Person.key);
+        }
+
+        else{
+            console.error("Key does not exists");
+            
+        }
+    </script>
+</body>
+</html>

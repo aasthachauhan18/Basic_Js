@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        // Get all values from an object.
+
+        const Person ={
+            name:"Aastha",
+            age:20,
+            course:"FullStack",
+            duration:2,
+            isEligible:true
+        }
+        console.log(Person);
+        
+
+        // console.log(Object.values(Person));
+        
+            // Sum numeric values.
+            // console.log(Person.age + Person.duration);
+            
+
+
+
+            // Filter values that are strings.
+            // console.log(Object.values(Person).filter('string'));
+            
+            // Check if a value exists using includes().
+            // console.log(Object.values(Person).includes("Aastha"));
+            
+            // Find the longest string value.
+              let longestString = '';
+            for (const value in Person) {
+                if (Person[value].length>longestString.length) {
+                    longestString = Person[value];
+                }
+            }
+            console.log(longestString);
+            
+            // Count how many values are true.
+
+            // let Count =0;
+            // for (const value in Person) { 
+            //    if (Person[value] === true) {
+            //     Count++;
+            //    }         
+                
+            // }
+            // console.log(Count);
+            
+
+
+            // Create a sentence from values.
+            // console.log(Object.values(Person).join(" "));
+            
+            // Transform values with map().
+
+            // Check if all values are numbers.
+            // for (const value in Person) {
+            //     if (typeof Person[value] === 'number') {
+            //         console.log(true);
+                    
+            //     }
+            //     console.log(false);
+                
+                
+                
+            // }
+
+    // Get unique values using Set. Create this in proper format using list
+
+    </script>
+    </body>
+</html>

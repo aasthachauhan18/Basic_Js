@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+         const Person ={
+            name:"Aastha",
+            age:20,
+            duration:2,
+            isEligible:true,
+            Hello:function() {
+                console.log("Hello,I am " +this.name);
+                
+
+            },
+            course:{
+                FD:20000,
+                FSD:90000
+
+            }
+        };
+        console.log(Person);
+        
+        // Make an object immutable.
+        Object.freeze(Person);
+        Person.name = "Dev";
+        console.log(Person);
+        
+
+        // Prevent config settings from being changed.
+        // Lock an object after setup.
+        // Try modifying frozen object and catch the error.
+        // Freeze nested objects (manual deep freeze).
+        // Prevent accidental overwrite.
+        // Secure constants in a module.
+        // Ensure object stays the same in tests.
+        // Freeze multiple objects in an array.
+        // Check if an object is frozen with Object.isFrozen().
+
+        console.log(Object.isFrozen(Person));
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Person ={
+            name:"Aastha",
+            age:20,
+            duration:2,
+            isEligible:true,
+            Hello:function() {
+                console.log("Hello,I am " +this.name);
+                
+
+            },
+            course:{
+                FD:20000,
+                FSD:90000
+
+            }
+        };
+        console.log(Person);
+        // Create a new object with a given prototype.
+        const obj = Object.create(Person)
+        console.log(obj);
+        
+        // Set up prototypal inheritance manually.
+        console.log(obj.age);
+        
+        // Use null as prototype for dictionary objects.
+        obj.age = '';
+        console.log(obj.age);
+        
+        // Build an object with getters and setters.
+        // Add shared methods to the prototype.
+        // Create a hierarchy of object types.
+        // Build custom object factories.
+        // Avoid pollution from Object.prototype.
+        // Create an object with predefined descriptors.
+        // Use Object.create() to mock objects in tests.
+    </script>
+</body>
+</html>

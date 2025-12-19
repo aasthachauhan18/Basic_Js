@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const Person ={
+            name:"Aastha",
+            age:20,
+            course:"FullStack",
+            duration:2,
+            isEligible:true
+        }
+        const Person1 ={
+            name:"Het",
+            age:21,
+            course:"FullStack",
+            duration:2,
+            isEligible:true
+        }
+
+        console.log(Person);
+        // Clone an object.
+        //  const obj = Object.assign({})
+        //  console.log(obj);
+         
+        // Merge two objects.
+
+       const obj3 =  Object.assign(Person,Person1);
+       console.log(Person);
+       
+        
+        // Add default values to an object.
+        console.log(Object.assign({},Person,Person1));
+        
+        // Override specific properties.
+        // Deep clone with nested objects (shallow for now).
+        // Track changes by assigning to a log object.
+        // Reset an object’s properties.
+        // Transfer state in an app object.
+        // Copy properties conditionally.
+    </script>
+</body>
+</html>

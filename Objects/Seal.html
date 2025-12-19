@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const Person ={
+            name:"Aastha",
+            age:20,
+            duration:2,
+            isEligible:true,
+            Hello:function() {
+                console.log("Hello,I am " +this.name);
+                
+
+            },
+            course:{
+                FD:20000,
+                FSD:90000
+
+            }
+        };
+        console.log(Person);
+        
+        // Seal an object to prevent new keys.
+
+        
+        
+        // Person.naam = "Dev";
+        // console.log(Person.naam); //undefined
+        
+        // Modify existing keys in a sealed object.
+         Object.seal(Person);
+        Person.name = "Dev";
+        console.log(Person.name);
+
+
+        // Check if object is sealed.
+        console.log(Object.isSealed(Person));
+        
+        // Prevent property deletion.
+
+        delete Person.age;
+        console.log(Person);
+        
+
+        // Secure configuration structure but allow changes.
+        
+        // Write a utility to seal objects conditionally.
+        // Track modifications on sealed objects.
+        // Handle attempts to add properties gracefully.
+        // Create a config editor with sealed objects.
+        // Simulate light immutability with seal().
+    </script>
+</body>
+</html>
