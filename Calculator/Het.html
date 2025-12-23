@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .col-50{
+            width: 50%;
+        }
+        .row{
+            display: flex;
+        }
+    </style>
+</head>
+<body id="body">
+    <div>
+        <h1 id="heading-tag">Hello</h1>
+        <p id="para"> Hello my name is </p>
+        <div class="row">
+            <div class="col-50">
+                <p>Press dark button to turn on dark mode</p>
+                <p>and press duble for turn of dark mode</p>
+                <button id="first" onclick = dark() ondblclick="light()">Dark</button>
+            </div>
+            <div class="col-50">
+                <p>Press light button to turn on normal mode</p>
+                <button id="second" onclick="light()">Light</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let heading = document.getElementById("heading-tag");
+        // heading.style.alignItems = "center"
+        heading.style.textAlign = "center";
+        function dark() {
+         let dark = document.getElementById("body");
+          dark.style.backgroundColor = "black";
+          dark.style.color = "white";
+        }
+        function light() {
+         let dark = document.getElementById("body");
+          dark.style.backgroundColor = "white";
+          dark.style.color = "black";
+        }
+        let a = document.getElementById("para");
+        console.log(a);
+        
+        a.innerHTML="My name is Het";
+        console.log(a);
+            a.innerHTML = " Het Patel"
+    </script>
+</body>
+</html>

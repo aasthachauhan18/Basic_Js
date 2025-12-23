@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    </head>
+    <body style="background-color: palevioletred;">
+        <h1
+            class="text-center text-light">Calculator</h1>
+        <div class="card card-body text-center p-4 border-dark pt-5" style="background-color: rgba(209, 159, 168, 0.421);">
+            <div class="p-2">
+                <input class="p-3" type="number" name="num1" id="num1"
+                    placeholder="Enter number1">
+
+            </div>
+
+            <div class="p-2">
+
+                <input class="p-3" type="number" name="num2" id="num2"
+                    placeholder="Enter number2">
+            </div>
+            <div>
+                <button onclick="plus()" class="btn btn-outline-dark"
+                    type="submit" id="Plus">+</button>
+                <button onclick="minus()" class="btn btn-outline-dark"
+                    type="submit" id="sub">-</button>
+                <button onclick="multi()" class="btn btn-outline-dark"
+                    type="submit" id="mul">*</button>
+                <button onclick="Division()"
+                    class="btn btn-outline-dark" type="submit"
+                    id="div">/</button>
+            </div>
+            <div class="p-2">
+
+                <input class="p-3" type="number" name="output" id="output"
+                    placeholder="Result">
+            </div>
+        </div>
+
+        <script>
+            
+            
+            
+            
+            
+            function plus() {
+                let num1 = parseFloat(document.getElementById("num1").value);
+                let num2 = parseFloat(document.getElementById("num2").value);
+                console.log(num1);
+                console.log(num2);
+                console.log(num1+num2);
+                document.getElementById('output').value = num1 + num2;
+            }
+
+            function minus() {
+                let num1 = parseFloat(document.getElementById("num1").value);
+                let num2 = parseFloat(document.getElementById("num2").value);
+                console.log(num1);
+                console.log(num2);
+                console.log(num1-num2);
+                document.getElementById('output').value = num1 - num2;
+            }
+            function multi() {
+                let num1 = parseFloat(document.getElementById("num1").value);
+                let num2 = parseFloat(document.getElementById("num2").value);
+                console.log(num1);
+                console.log(num2);
+                console.log(num1*num2);
+                document.getElementById('output').value = num1 * num2;
+            }
+            function Division() {
+                let num1 = parseFloat(document.getElementById("num1").value);
+                let num2 = parseFloat(document.getElementById("num2").value);
+                console.log(num1);
+                console.log(num2);
+                console.log(num1/num2);
+                document.getElementById('output').value = num1 / num2;  
+            }
+            
+        </script>
+    </body>
+</html>

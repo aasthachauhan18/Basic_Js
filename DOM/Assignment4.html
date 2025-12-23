@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="myDiv"style="border: 1px solid">
+
+            <button id="create" onclick="createPara()">Clickk Me!</button>
+        </div>
+<script>
+    function createPara() {
+        let para = document.createElement("p");
+        let node = document.createTextNode("This is a new Paragraph");
+        para.appendChild(node);
+        document.getElementById("myDiv").appendChild(para);
+    }
+</script>
+    </body>
+</html>

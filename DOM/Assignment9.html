@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p class="info">Helllo</p>
+        <p class="info">Hiii</p>
+        <p class="info">My name is Aastha</p>
+        <button onclick="changeColor()">Click Me!</button>
+        <script>
+        function changeColor() {
+    let info = document.getElementsByClassName("info");
+    for (let i = 0; i < info.length; i++) {
+        info[i].style.backgroundColor = "yellow"
+        info[i].style.color = "green";
+        
+    }
+}
+    </script>
+    </body>
+</html>
