@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        /* #box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+        } */
+    </style>
+    </head>
+    <body id="box">
+        <div></div>
+        <button id="btn">Change Color</button>
+        <script>
+        let color = ["red","blue","yellow","black","pink"];
+        let i= 0
+        // for (let i = 0; i < color.length; i++) {
+        //     console.log(color[i]);
+          btn.addEventListener("click", function () {
+        box.style.backgroundColor = color[i];
+        i++;
+
+        if (i == color.length) {
+            i=0;
+        }
+        
+    });
+
+
+        
+    </script>
+    </body>
+</html>
