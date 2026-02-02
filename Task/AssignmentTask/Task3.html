@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+<body>
+    <script>
+        // 1. Task: Create a string and print it.
+
+        // let str = "Hello, Welcome";
+        // console.log(str);
+        
+
+        // // 2. Task: Find the length of a string.
+        // console.log(str.length);
+        
+        // // 3. Task: Convert string to uppercase.
+
+        // console.log(str.toLocaleUpperCase());
+        
+        // // 4. Task: Convert string to lowercase.
+        // console.log(str.toLocaleLowerCase());
+        
+        // // 5. Task: Extract first 4 characters from a string.
+        // let extract = str.slice(0,4)
+        // console.log(extract);
+        
+        // // 6. Task: Replace a word in a string.
+
+        // // let rep = str.replace("Hello","Hii")
+        // // console.log(rep);
+        
+
+        // // 7. Task: Check if string contains a word.
+        // console.log(str.includes("Hello"));
+
+        // // 8. Task: Concatenate two strings.
+        // let str1 = "Hello ";
+        // let str2 = "How are you"
+        // console.log(str1 +str2);
+        
+        // // 9. Task: Use template literals to display name and age.
+        // let name = "Aastha";
+        // let age = 20;
+
+        // console.log(`Hello I'm ${name} and I'm ${age}th`);
+        
+
+        // // 10. Task: Create a multiline string.
+
+        // let mul = `
+        // Hello
+        // How are you
+        // Welcome to the World`;
+        // console.log(mul);
+        
+
+        // // 11. Task: Use escape characters in string.
+
+        // let word = "Hello\nWorld"
+        // console.log(word);
+
+        // // 12. Task: Round a number to nearest integer.
+        // let num = 30.6547;
+        // console.log(Math.round(num));
+        
+        // // 13. Task: Round down a number.
+        // console.log(Math.floor(num));
+        
+
+        // // 14. Task: Round up a number.
+        // console.log(Math.ceil(num));
+        
+        // // 15. Task: Remove decimal part of number.
+        // console.log(num.toFixed());
+        
+        // // 16. Task: Find maximum number.
+        // let arr = [30,40,80,10,40];
+        // console.log(Math.max(arr));
+        
+        // // 17. Task: Find minimum number.
+        // console.log(Math.min(arr));
+        
+        // // 18. Task: Generate a random number between 0 and 1.
+        // console.log(Math.random());
+        
+        // // 19. Task: Generate random number between 1 and 10.
+        // console.log(Math.random() * 10 + 1);
+        
+        // // 20. Task: Convert string to integer.
+
+        // // let num1 = "20";
+        // // console.log(num1);
+        // // console.log(parseInt(num1));
+        
+        
+        
+        // // 21. Task: Convert string to float.
+        //     let num2 = "30.345"
+        // console.log(parseFloat(num2));
+        
+        // // 22. Task: Check if value is NaN.
+        // let name1 = "abc";
+        // console.log(Number(name1));
+        
+        // // 23. Task: Produce Infinity.
+        // console.log(10/0);
+        
+        // // 24. Task: Format number to 2 decimals.
+        // let num3 = 30.637534
+        // console.log(num3.toFixed(2));
+        
+        // // 25. Task: Repeat a string 3 times.
+        // console.log(name1.repeat(3));
+        
+
+
+
+
+
+        // 26. Task: Create an array of numbers.
+        let num = [10,20,30,40,50,60]
+        console.log(num);
+        
+        // 27. Task: Find array length.
+        console.log(num.length);
+        
+        // 28. Task: Access first element.
+        console.log(num[0]);
+        
+        // 29. Task: Add element at end.
+            num.push(70);
+            console.log(num);
+                    
+        // 30. Task: Remove last element.
+            num.pop();
+            console.log(num);
+                    
+        // 31. Task: Remove first element.
+            num.shift();
+            console.log(num);
+                    
+        // 32. Task: Add element at beginning.
+            num.unshift(100);
+            console.log(num);
+                    
+        // 33. Task: Remove 1 element from index 1.
+        console.log(num.splice(1,1));
+        
+        
+        // 34. Task: Insert element at index 2.
+        num.splice(2,0,1000)
+        console.log(num);
+        
+        
+        // 35. Task: Create a nested array.
+        let arr1 = [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ];
+        console.log(arr1);
+        
+        // 36. Task: Access nested array value.
+        console.log(arr1[0][1]);
+        
+        // 37. Task: Find first number greater than 10.
+
+        for (let i in num) {
+            if (num[i] > 30) 
+            console.log(num[i]);
+               
+            
+        }
+
+        // 38. Task: Check if any number is even.
+        let num2 = [2,3,7,35,98,23,21,54,23]
+        for (let i in num2) {
+            if (num2[i]%2 == 0) 
+            console.log(num2[i]);
+               
+            
+        }
+        
+        // 39. Task: Check if all numbers are positive.
+        let num3 = [-2,97,-23,88,-23,76]
+       console.log( num3.filter((num) => num>0));
+       
+        // 40. Task: Check if value exists in array.
+        console.log(num2.includes(3));
+        
+        // 41. Task: Find index of element.
+        console.log(num2.indexOf(7));
+        
+        // 42. Task: Convert array to string.
+        console.log(String(num2));
+        
+        // 43. Task: Reverse an array.
+        console.log(num2.reverse());
+        
+        // 44. Task: Merge two arrays.
+            console.log(num2.concat(num3));
+            
+        // 45. Task: Copy an array using spread operator.
+        console.log(...num2);
+        
+        // 46. Task: Flatten a nested array.
+        let arr2 = [10,20,[40,33,88,[90,78]]]
+        console.log(arr2.flat());
+        
+        // 47. Task: Clear an array.
+        num3.length = 0;
+        console.log(num3);
+        
+        
+        // 48. Task: Check if variable is array.
+        console.log(Array.isArray(num2));
+        
+        // 49. Task: Destructure array values.
+        let [a,b] = num2;
+        console.log([a,b]);
+        
+        // 50. Task: Best practice with arrays.
+        // Ans : Understabd Mutating and non-mutating Methods
+        
+    </script>
+</body>
+</html>

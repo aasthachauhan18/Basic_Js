@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    <script>
+        // 1. Task: Declare a string and print its type.
+        let str = "Aastha";
+        console.log(str)
+        console.log(typeof str)
+        // 2. Task: Declare a number and a boolean.
+        let a = 10
+        console.log(a)
+        console.log(typeof a)
+
+        let bool = true
+        console.log(bool)
+        console.log(typeof bool)
+        // 3. Task: Create an undefined variable.
+        let name;
+        console.log(name)
+        // 4. Task: Assign null to a variable.
+        name = null
+        console.log(name)
+        // 5. Task: Check the type of null.
+        console.log(typeof name)
+        // 6. Task: Create an object and modify its property.
+        // let person = {
+        //     name:"abc",
+        //     age:20
+        // };
+        // console.log(person)
+        // person.age = 25
+        // console.log(person)
+        // 7. Task: Show primitive immutability.
+        let b = "yxz";
+        console.log(b)
+        b[0] = a;
+        console.log(b)
+
+
+        // 8. Task: Compare two primitive values.
+        let c = 10;
+        let d = "10";
+        console.log(c==d)
+        console.log(c===d)
+        // 9. Task: Compare two objects.
+
+        let p1 = {
+            city :"Ahe",
+            state:"Gujarat"
+        };
+        let p2= {
+            city:"pune",
+            state:"Maharastra"
+        }
+        console.log(p1==p2)
+        console.log(p1===p2)
+        // 10. Task: Assign object reference to another variable.
+        //  let person = {
+        //     name:"abc",
+        //     age:20
+        // };
+
+        // let person2 = person
+        // person2.age = 30;
+
+        // console.log(person)
+        // console.log(person2)
+
+        // 11. Task: Modify object using reference.
+         let person = {
+            name:"abc",
+            age:20
+        };
+
+        let person2 = person
+        person2.age = 30;
+
+        console.log(person)
+        console.log(person2)
+
+        // 12. Task: Create an array and check its type.
+        let fruits = ["apple","banana","mango","cherry"]
+        console.log(fruits)
+        console.log(typeof fruits)
+        // 13. Task: Check if value is NaN.
+        let name1 = "anything"
+        console.log(name1/0)
+
+        // 14. Task: Produce NaN using invalid operation.
+         let name2 = "anything"
+        console.log(name2/0)
+
+        // 15. Task: Check type of NaN.
+        console.log(typeof NaN)
+        // 16. Task: Produce Infinity.
+        console.log(10/0)
+        // 17. Task: Produce -Infinity.
+        console.log(-10/0)
+        // 18. Task: Check if a value is finite.
+        console.log(10/5)
+        // 19. Task: Convert string to number explicitly.
+        console.log("10")
+        console.log(typeof "10")
+        let n1 = Number("10")
+        console.log(n1)
+        console.log(typeof n1)
+        // 20. Task: Convert number to string.
+        let n2 = "10" + 5;
+        console.log(n2)
+        console.log(typeof n2)
+
+
+
+        // 21. Task: Demonstrate implicit type coercion.
+        console.log("10" + 10);
+
+        // 22. Task: Demonstrate numeric coercion.
+
+        console.log("10" * 2)
+        // 23. Task: Convert string to integer.
+        let int = parseInt("20")
+        console.log(int)
+        console.log(typeof int)
+        // 24. Task: Convert string to float.
+        let ft = parseFloat("40.40")
+        console.log(ft)
+        console.log(typeof ft)
+        // 25. Task: Convert boolean to number.
+        console.log(Number(true))
+        // 26. Task: Convert empty string to boolean.
+        console.log(Boolean(""))
+        // 27. Task: Check truthy value.
+        if ("hello") {
+            console.log("Truthy value")
+        }
+        // 28. Task: Check falsy value.
+        if (!null) {
+            console.log("Falsy Value")
+        }
+        // 29. Task: Handle invalid numeric conversion.
+        const value = Number("abc");
+        console.log(value)
+
+        if (isNaN(value)) {
+        console.log("Invalid number");
+        }
+
+        // 30. Task: Avoid coercion using strict comparison.
+        console.log(1 == "1")
+        console.log(1 === "1")
+
+
+        // 31. Task: Add two numbers.
+        console.log(10+20)
+        // 32. Task: Find remainder.
+        console.log(10%3)
+        // 33. Task: Use exponentiation.
+        console.log(2**2)
+        // 34. Task: Compare two values using ==.
+        console.log("2"==2)
+        // 35. Task: Compare two values using ===.
+        console.log("2"===2)
+        // 36. Task: Use logical AND.
+        console.log(5>4 && 6>7)
+        // 37. Task: Use logical OR.
+        console.log(5>4 || 6>7)
+        // 38. Task: Use logical NOT.
+        if (!null) {
+            
+            console.log("Falsy value")
+        }
+        // 39. Task: Use assignment operator.
+        console.log("10"==5)
+        // 40. Task: Use compound assignment.
+        let number = 10
+        console.log(number+=10)
+        // 41. Task: Use ternary operator.
+        // let age = 20;
+        // let check = age>=18 ? "Validate" : "Not Validate"
+        // console.log(check)
+        // 42. Task: Nested ternary (not recommended).  //Doubt
+        //  let age = 20;
+        // let check = age>=18 ? "Validate" : "Not Validate": age>=50 ?
+        // console.log(check)
+
+        // 43. Task: Check operator precedence.
+//         const result = 1 + 2 * 3;
+// console.log(result); 
+
+        // 44. Task: Override precedence using parentheses.
+         result = (1 + 2) * 3;
+        console.log(result)
+        // 45. Task: Logical short-circuiting.
+        true && console.log("Hello")
+        // 46. Task: Logical OR default value.
+        // let user = ""
+        // let username = user || "Hello"
+        // 47. Task: AND operator return value
+        let user = ""
+        let username = user && "Hello"
+        // .
+        // 48. Task: Evaluate comparison chain.
+        console.log(5>4>3)
+        // 49. Task: Fix comparison chain.
+        console.log((5>4) && (4>3))
+        // 50. Task: Best practice for operators.
+        // Ans: Always use strict conversion
+    </script>
+</body>
+</html>

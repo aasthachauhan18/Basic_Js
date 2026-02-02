@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+</head>
+<body>
+    <script>
+        // . Task: Create an object with name and age.
+        const person = {
+            name:"abc",
+            age:20
+        }
+        console.log(person);
+        
+        // 2. Task: Access object property using dot notation.
+        console.log(person.age);
+        
+        // 3. Task: Access object property using bracket notation.
+        console.log(person["age"]);
+        
+        // 4. Task: Add a new property to an object.
+        person.city = "Delhi";
+        console.log(person);
+        
+        // 5. Task: Delete a property from an object.
+        delete person.city
+        console.log(person);
+        
+        // 6. Task: Add property dynamically using variable.
+
+    //    let key = 'dist';
+    //    const username = {
+    //     name:'xyz',
+    //     [key]:"IT"
+    //    } 
+
+    //    console.log(username);
+       
+
+        // 7. Task: Create an object method.
+
+        const user = {
+            getname(){
+                console.log("Hello");
+                
+            }
+            
+        }
+        
+        
+        // 8. Task: Call an object method.
+        user.getname();
+
+        // 9. Task: Use this inside an object method.
+        // const username = {
+        //     name:"Aastha",
+        //     getname(){
+        //         console.log(`Hello ${this.name}`);
+                
+        //     }
+        // }
+        // username.getname()
+        // 10. Task: Show implicit binding.
+        //  const username = {
+        //     name:"Aastha",
+        //     getname(){
+        //         console.log(`Hello ${this.name}`);
+                
+        //     }
+        // }
+        // username.getname()
+
+        // 11. Task: Lose this context.
+
+        //  const username = {
+        //     name:"Aastha",
+        //     getname(){
+        //         console.log(`Hello ${this.name}`);
+                
+        //     }
+        // }
+        // const name = username.getname
+        // name();
+
+        // 12. Task: Fix context using call().
+        //     const username = {
+        //     name:"Aastha",
+        //     getname(){
+        //         console.log(`Hello ${this.name}`);
+                
+        //     }
+        // }
+        // const nameuser = {
+        //     name:"Sneha"
+        // }
+        // username.getname.call(nameuser)
+        // 13. Task: Fix context using apply().
+        // const username = {
+        //     name:"Aastha",
+        //     getname(){
+        //         console.log(`Hello ${this.name}`);
+                
+        //     }
+        // }
+        // const nameuser = {
+        //     name:"Sneha"
+        // }
+        // username.getname.apply(nameuser)
+
+        // 14. Task: Fix context using bind().
+        // const username = {
+        //     name:"Aastha",
+        //     getname(){
+        //         console.log(`Hello ${this.name}`);
+                
+        //     }
+        // }
+        // const nameuser = {
+        //     name:"Sneha"
+        // }
+        // username.getname.bind(nameuser)
+        // 15. Task: Show arrow function this behavior.
+
+        // const username = {
+        //     name:"Aastha",
+        //     getname : () =>{
+        //         console.log(`Hello ${this.name}`);
+                
+        //     }
+        // }
+        // username.getname()
+        // 16. Task: Explain arrow function issue.
+        // 17. Task: Loop through object keys.
+        for (const key in person) {
+            if (!Object.hasOwn(person, key)) continue;
+            
+            const element = person[key];
+            console.log(element);
+            
+            
+            
+        }
+        // 18. Task: Get all object keys.
+       console.log(Object.keys(person));
+       
+        
+        // 19. Task: Get all object values.
+        console.log(Object.values(person));
+        
+        // 20. Task: Convert object to entries.
+        console.log(Object.entries(person));
+        
+        // 21. Task: Clone an object.
+
+        const copy = {...person}
+        console.log(copy);
+        
+        
+        // 22. Task: Freeze an object.
+        const freeze = Object.freeze(person)
+        console.log(freeze);
+        person.age = 25
+        console.log(person);
+        
+
+        
+        // 23. Task: Check if property exists.
+       
+
+        // 24. Task: Destructure object properties.
+        // const {name,age} = person
+        // console.log(name);
+        // console.log(age);
+        
+        
+        // 25. Task: Best practice for object methods.
+        // Use { name, age } instead of { name: name, age: age } when variable names match key names.
+
+
+        // 26. Task: Simple if condition.
+        // let age = 20;
+        // if (age >=18) {
+        //     console.log("Validate");
+            
+        // }
+        // 27. Task: if-else condition.
+        if (age>=18) {
+            console.log("Validate");
+            
+        } else {
+            console.log("Not validate");
+            
+        }
+        // 28. Task: else if condition.
+         let name1 = "abc"
+         let password = "1234"
+         if (name1==="abc") {
+            console.log("validate name");
+            
+            if (password==="1234") {
+                console.log("Valide password");
+                
+            } else {
+                console.log("Invalid password");
+                
+            }
+         } else {
+            console.log("Invalide");
+            
+         }
+        // 29. Task: Nested if.
+        let marks = 50
+        if (marks>=80 && marks<100) {
+            console.log("A");
+            
+        } if (marks>=60 && marks<79) {
+            console.log("B");
+            
+        } if (marks>=40 && marks<59) {
+            console.log("C");
+            
+        }
+        
+        // 30. Task: Validate empty input.
+        let email = "gghfhgj"
+        if (!email) {
+            console.log("Email must be required");
+            
+        }
+        // 31. Task: Check truthy value.
+        // let value = "Hello"
+        // if (value) {
+        //     console.log("Thruthy Value");
+            
+        // }
+
+        // 32. Task: Check falsy value.
+        let value = ""
+        if (!value) {
+            console.log("Falsy value");
+            
+        }
+
+        // 33. Task: Validate number range.
+        //  let marks = 50
+        // if (marks>=80 && marks<100) {
+        //     console.log("A");
+            
+        // } if (marks>=60 && marks<79) {
+        //     console.log("B");
+            
+        // } if (marks>=40 && marks<59) {
+        //     console.log("C");
+            
+        // }
+        
+        // 34. Task: Use logical OR for default.
+
+        // 35. Task: Use switch statement.
+        // 36. Task: Use default in switch.
+        // 37. Task: Switch without break (fall-through).
+        // 38. Task: Replace if-else with ternary.
+        let age = 20;
+        age>18?"Yes":"No"
+        // 39. Task: Nested ternary (not recommended).
+
+        // 40. Task: Guard clause example.
+        // 41. Task: Validate password length.
+        // 42. Task: Check multiple conditions.
+        // 43. Task: Short-circuit execution.
+        // 44. Task: Convert condition to boolean.
+        // 45. Task: Compare using strict equality.
+        // 46. Task: Avoid assignment in condition.
+        // 47. Task: Validate email presence.
+        // 48. Task: Check empty array in condition.
+        // 49. Task: Conditional return value.
+        // 50. Task: Best practice for conditionals.
+
+        //  Always use === instead of == to prevent unexpected type coercion bugs.
+    </script>
+</body>
+</html>
