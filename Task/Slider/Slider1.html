@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+    }
+    div{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+    button{
+        padding: 15px 20px;
+        border: none;
+        background-color: burlywood;
+        border-radius: 15px;
+        margin-right: 5px;
+
+    }
+</style>
+<body>
+    <h1>Slider</h1>
+    <div>
+        <button onclick="prev()">Prev</button>
+        <img class="image" src="./dog1.jpeg" alt="" srcset="">
+        <img class="image" src="./dog2.jpeg" alt="" srcset="">
+        <img class="image" src="./dog3.jpeg" alt="" srcset="">
+        <img class="image" src="./dog4.jpeg" alt="" srcset="">
+        <button onclick="next()">Next</button>
+    </div>
+    <script>
+        let image = document.getElementsByClassName('image');
+        let count = 0;
+        function hideImage() {
+
+            for (let i = 0; i < image.length; i++) {
+                image[i].style.display="none";
+                
+            }
+            
+        }
+
+        function showImage() {
+            hideImage();
+            image[count].style.display="block";
+        }
+
+
+        function next() {
+            count++;
+            if (count>=image.length) {
+                count=0;
+            }
+
+            showImage();
+        }
+
+        function prev() {
+            count--;
+            if (count<0) {
+                count=image.length-1
+            }
+            showImage();
+        }
+
+        setInterval(next,1000);
+    </script>
+</body>
+</html>
