@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecture1</title>
-</head>
-<body>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lecture1</title>
+        <!-- <script defer src="index.js"></script> -->
+        <script async src="index.js"></script>
+
+    </head>
+    <body>
+        <button id="btn">Run</button>
+        <script>
         // 1. First Script Execution
         console.log("Hello");
         console.log("How are you");
@@ -25,8 +29,88 @@
 
         // 4. Blocking Script Experiment
 
+        // for (let i = 0; i < 5_000_000_000; i++) {
+            
+            
+        // }
 
+        // console.log("Hello");
         
+
+
+        // 5. Script Placement Test
+
+        // 6. Async vs Sync Comparison
+
+        console.log("Start");
+        setTimeout(() => {
+            console.log("Hello");
+            
+        }, 2000);
+        console.log("end");
+
+        // 7. UI Freeze Simulation
+        
+
+        document.getElementById('btn').addEventListener('click',function(){
+
+    console.log("Button Clicked");
+    
+    for (let i = 0; i < 5_000_00_000; i++) {
+    }
+    
+    console.log("Button Run");
+});
+
+// 8. Non-Blocking Refactor
+
+
+// 10. Execution Debugging
+
+let result;
+
+setTimeout(() => {
+  result = 10;
+}, 1000);
+
+console.log(result);
+
+
+// 11. Predict Execution Without Running
+
+// console.log("A");
+
+// setTimeout(() => {
+//   console.log("B");
+// }, 0);
+
+// Promise.resolve().then(() => {
+//   console.log("C");
+// });
+
+// console.log("D");
+
+
+// 14. Event-Driven Execution
+
+ document.getElementById('btn').addEventListener('click',function(){
+
+    console.log("Button Clicked");
+
+});
+        
+// 15. Execution Flow Documentation
+
+// This script follows an event-driven execution model.
+
+// When the page loads, the browser parses the HTML and registers event listeners without executing the main logic. No heavy computation runs during the initial load, ensuring the UI remains responsive.
+
+// The core logic is executed only after a user interaction (such as a button click). Once the event is triggered, the associated callback function is placed in the call stack and executed synchronously.
+
+// After the execution completes, control returns to the browser, allowing it to continue handling user interactions and rendering updates.
+
+// This approach improves performance, prevents unnecessary blocking of the main thread, and ensures code runs only when required.
     </script>
-</body>
+        <!-- <script src="./index.js"></script> -->
+    </body>
 </html>
